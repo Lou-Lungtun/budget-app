@@ -1,0 +1,122 @@
+/* ตั้งค่าหน้าเว็บ */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 30px;
+}
+
+/* หัวข้อ */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* แบบฟอร์ม */
+#budgetForm {
+    background-color: white;
+    width: 400px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ช่องกรอกข้อมูล */
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ปุ่มตกลง และ ยกเลิก */
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ปุ่มตกลง */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* ปุ่มยกเลิก */
+input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+/* เวลาชี้เมาส์ที่ปุ่ม */
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    opacity: 0.8;
+}
+
+/* ส่วนสรุปยอด */
+#totalIncome,
+#totalExpense,
+#balance {
+    width: 400px;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* รายรับ */
+#totalIncome {
+    color: green;
+}
+
+/* รายจ่าย */
+#totalExpense {
+    color: red;
+}
+
+/* ยอดคงเหลือ */
+#balance {
+    color: #333;
+    font-weight: bold;
+}
+
+/* รายการรายรับ-รายจ่าย */
+#transactionList {
+    width: 400px;
+    margin: 10px auto;
+    padding: 0;
+    list-style: none;
+}
+
+/* รายการแต่ละรายการ */
+#transactionList li {
+    background-color: white;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* ปุ่มลบที่ JavaScript สร้างขึ้น */
+#transactionList button {
+    float: right;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#transactionList button:hover {
+    opacity: 0.8;
+}

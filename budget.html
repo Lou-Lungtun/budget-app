@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="budget.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="budgetform.js" defer></script>
+</head>
+
+<body>
+    <h1>แบบฟอร์มรายรับ-รายจ่าย</h1>
+    <form id="budgetForm">
+        <label for="item">ชื่อรายการ:</label>
+        <input type="text" id="item" name="name" required maxlength="50">
+        <br><br>
+        <label for="date">วันที่:</label>
+        <input type="date" id="date" name="date" required>
+        <br><br>
+        <label for="amount">จำนวนเงิน:</label>
+        <input type="number" id="amount" name="amount" required min="0">
+        <br><br>
+        <label for="text">ประเภท:</label>
+        <input type="radio" id="type1" name="type" value="รายรับ" checked>
+        <label for="type1">รายรับ</label>
+        <input type="radio" id="type2" name="type" value="รายจ่าย">
+        <label for="type2">รายจ่าย</label>
+        <br><br>
+        <input type="submit" value="ตกลง">
+        <input type="reset" value="ยกเลิก">
+    </form>
+    <br><br>
+    <div>
+    <div>
+        <div id="totalIncome">รายรับรวม: 0 บาท</div>
+        <div id="totalExpense">รายจ่ายรวม: 0 บาท</div>
+        <div id="balance">ยอดคงเหลือ: 0 บาท</div>
+    </div>
+
+    <br><br>
+
+    <div>รายการรายรับ-รายจ่ายทั้งหมด</div>
+    <ul id="transactionList">
+        <!-- รายการจะถูกเพิ่มที่นี่ -->
+    </ul>
+</div>
+</body>
+
+</html>
